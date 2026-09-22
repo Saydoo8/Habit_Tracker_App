@@ -7,7 +7,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
-open_api_key = os.getenv("new")
+open_api_key =st.secrets["new"] #os.getenv("new")
 HABITS_FILE = "habits.csv"
 LOGS_FILE = "habit_logs.csv"
 
@@ -243,7 +243,7 @@ elif page == "2. Log Completion":
                         st.success(
                             f"Logged '{selected_habit_name}' for {formatted_date}!"
                         )
-                        rapid_api_key = os.getenv("rapidapi-key")
+                        rapid_api_key = st.secrets["rapidapi-key"]#os.getenv("rapidapi-key")
                         api_url = "https://quotes-inspirational-quotes-motivational-quotes.p.rapidapi.com/quote"
                         querystring = {"token": "ipworld.info"}
                         headers = {

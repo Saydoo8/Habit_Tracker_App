@@ -37,7 +37,6 @@ def get_llm_response(prompt):
 
 
 def get_llm_coaching(df_habits, df_logs, streaks_summary):
-    """Formats habit tracking data into a prompt and calls get_llm_response."""
     prompt = f"""
 Analyze the following habit tracking data for a user and provide actionable, encouraging coaching feedback.
 

@@ -1,5 +1,6 @@
 # Project
-AI-Powered Personal Habit Tracker
+Personal Habit Tracker
+
 An interactive, data-driven web application built with Python, Streamlit, Pandas, and OpenAI (via OpenRouter) that helps users build, manage, and analyze long-term habits. The system persists data in lightweight .CSV files and leverages LLM integration to act as a personal habit coach.
 
 Key Features
